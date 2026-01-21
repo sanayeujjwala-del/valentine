@@ -14,6 +14,24 @@ setInterval(() => {
 
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
+yesBtn.addEventListener("click", () => {
+  document.body.innerHTML = `
+    <div class="container">
+      <h1>Yay! ❤️ Our Memories 💕</h1>
+      <div class="slideshow">
+        <img id="slide" src="images/pic1.jpg">
+      </div>
+      <p>I’m so happy you said YES 🥰</p>
+    </div>
+  `;
+
+  let index = 0;
+  setInterval(() => {
+    index = (index + 1) % images.length;
+    document.getElementById("slide").src = images[index];
+  }, 2000);
+});
+
 
 yesBtn.addEventListener("click", () => {
   document.body.innerHTML = `
