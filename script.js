@@ -1,3 +1,17 @@
+const images = [
+  "images/pic1.jpg",
+  "images/pic2.jpg",
+  "images/pic3.jpg"
+];
+
+let currentIndex = 0;
+const slide = document.getElementById("slide");
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % images.length;
+  slide.src = images[currentIndex];
+}, 2000);
+
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 
