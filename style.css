@@ -59,4 +59,14 @@ img {
     opacity: 0;
   }
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}
+
 
