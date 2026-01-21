@@ -4,12 +4,12 @@ const noBtn = document.getElementById("noBtn");
 
 // Slideshow images (YOUR photos)
 const images = [
-  "images/firstphoto.jpeg",
-  "images/garba.jpeg",
-  "images/photo14.jpeg",
-  "images/photo13.jpeg",
-  "images/eye.jpeg",
-  "images/sunrise.jpeg"
+  "image/firstphoto.jpeg",
+  "image/garba.jpeg",
+  "image/photo14.jpeg",
+  "image/photo13.jpeg",
+  "image/eye.jpeg",
+  "image/sunrise.jpeg"
 ];
 
 let currentIndex = 0;
